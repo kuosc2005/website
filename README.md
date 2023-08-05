@@ -1,5 +1,6 @@
-# Website
+# KUOSC Website
 
+URL: [https://kuosc.org.np](https://kuosc.org.np)
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
