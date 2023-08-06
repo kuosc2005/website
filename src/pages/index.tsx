@@ -17,8 +17,18 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/">
+            Know Our Projects
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://www.youtube.com/@kuosc">
+            Open School
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://sfd.kuosc.org.np/">
+            SFD 2023
           </Link>
         </div>
       </div>
@@ -30,8 +40,8 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Welcome to the Kathmandu University Open Source Community (KUOSC), a thriving and historic community from Kathmandu University dedicated to promoting and embracing the spirit of Open Source.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
