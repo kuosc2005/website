@@ -10,35 +10,33 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Training Programs',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        We offer a diverse range of training programs, including Linux Talks, Workshops and Bootcamps, to equip our members with essential skills in Open Source technologies through online and offline mediums.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Advocacy Activities',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        We actively participate in various advocacy activities, such as celebrating Software Freedom Day, organizing community-level workshops, and spreading awareness about the importance of Free and Open Source Software.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Open Source Projects',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        One of our primary focuses is on initiating and maintaining a wide array of open-source projects that are thoughtfully designed to cater to the unique needs and challenges faced by the local community.
       </>
     ),
   },
+  
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
@@ -58,7 +56,10 @@ function Feature({title, Svg, description}: FeatureItem) {
 export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container ">
+        <div className={styles.sectionHeading}>
+          <h2 >What We Do?</h2>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
