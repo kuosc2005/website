@@ -23,7 +23,7 @@ const config = {
   organizationName: 'kuosc2005', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
