@@ -122,19 +122,19 @@ const config = {
             items: [
               {
                 label: 'Open School',
-                to: '/docs/openschool/about',
+                to: '/knowledgebase/category/open-school',
               },
               {
                 label: 'Linux Talk',
-                to: '/docs/linuxtalk/about',
+                to: '/knowledgebase/category/linux-talk',
               },
               {
                 label: 'HeNN Elibrary Deployment',
-                to: '/docs/openschool/about',
+                to: '/knowledgebase/category/henn-elibrary-deployment',
               },
               {
                 label: 'Localization',
-                to: '/docs/openschool/about',
+                to: '/knowledgebase/category/localization',
               },
 
             ],
