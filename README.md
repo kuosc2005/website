@@ -3,15 +3,15 @@
 Welcome to the official repository of the Kathmandu University Open Source Project (KUOSC) [website](https://www.kuosc.org.np/)! This README serves as a comprehensive guide to understanding the purpose, features, installation instructions, and usage guidelines for the KUOSC website project. Whether you're a potential contributor, user, or simply interested in our project, we're thrilled to have you here.
 
 ## Table of Contents
-- [Introduction](##Introduction)
-- [Features](#communityFeatures)
-- [Getting Started](##Getting-Started)
-    - [Prerequisites](###Prerequisites)
-    - [Installation](###Installation)
-- [Usage](##Usage)
-- [Contributing](##Contributing)
-- [Community](##Community)
-- [License](##License)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Community](#community)
+- [License](#license)
 
 ## Introduction
 
@@ -32,14 +32,14 @@ Before you proceed, ensure you have the following prerequisites:
 Web Browser: Latest version of Chrome, Firefox, Safari, or Edge.
 Text Editor: Any code editor of your choice for viewing/editing the source code.
 ### Installation
-1. **Clone the Repository:
+1. **Clone the Repository:**
 
 git clone https://github.com/kuosc/website.git
 
 
 cd website
 
-2. **Open the Project:
+2. **Open the Project:**
 
 
 Use your preferred text editor to open the project files.
@@ -65,9 +65,14 @@ We welcome contributions from the community to make the KUOSC website even bette
 ## Community
 Join our community to stay connected, ask questions, and share your thoughts:
 
-[Discord](https://discord.gg/3tudZbMadu).
-[Twitter](https://twitter.com/kucc1997).
-[Website](https://www.kuosc.org.np/).
+[Discord](https://discord.gg/3tudZbMadu)
+
+
+[Twitter](https://twitter.com/kucc1997)
+
+
+[Website](https://www.kuosc.org.np/)
+
 
 We value your feedback and ideas to make this project thrive.
 
