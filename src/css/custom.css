@@ -28,3 +28,18 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+.pluginsHeader {
+  font-size: 200%;
+  line-height: 100%;
+  padding: 0 0 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 736px) {
+  .pluginsHeader {
+    padding-top: 30px;
+  }
+}
