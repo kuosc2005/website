@@ -40,3 +40,9 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+### Contributing
+
+You can contribute in this repository by forking it, creating a separate branch to do the task, making some changes, and creating pull request in this repository.
+
+**Warning:** DONOT use `npm` or `pnpm` to install dependencies. Rather, just use `yarn`. Github actions will fail if you use anything other than yarn.
