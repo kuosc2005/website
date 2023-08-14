@@ -1,8 +1,8 @@
-**#Kathmandu University Open Source Project (KUOSC) Website#**
+**#Kathmandu University Open Source Project (KUOSC) Website**
 
-Welcome to the official repository of the Kathmandu University Open Source Project (KUOSC) website! This README serves as a comprehensive guide to understanding the purpose, features, installation instructions, and usage guidelines for the KUOSC website project. Whether you're a potential contributor, user, or simply interested in our project, we're thrilled to have you here.
+Welcome to the official repository of the Kathmandu University Open Source Project (KUOSC) [website](https://www.kuosc.org.np/)! This README serves as a comprehensive guide to understanding the purpose, features, installation instructions, and usage guidelines for the KUOSC website project. Whether you're a potential contributor, user, or simply interested in our project, we're thrilled to have you here.
 
-##Table of Contents
+## Table of Contents
 - [Introduction](#Introduction)
 - [Features](#Features)
 - [Getting Started](#Getting-Started)
@@ -60,9 +60,9 @@ Please follow our Contribution Guidelines for detailed instructions.
 ## Community
 Join our community to stay connected, ask questions, and share your thoughts:
 
-Discord
-Twitter
-Mailing List
+[Discord](https://discord.gg/3tudZbMadu)
+[Twitter](https://twitter.com/kucc1997)
+[Website](https://www.kuosc.org.np/)
 We value your feedback and ideas to make this project thrive.
 
 ## License
