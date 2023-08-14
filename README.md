@@ -1,42 +1,70 @@
-# KUOSC Website
+**#Kathmandu University Open Source Project (KUOSC) Website**
 
-URL: [https://kuosc.org.np](https://kuosc.org.np)
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Welcome to the official repository of the Kathmandu University Open Source Project (KUOSC) website! This README serves as a comprehensive guide to understanding the purpose, features, installation instructions, and usage guidelines for the KUOSC website project. Whether you're a potential contributor, user, or simply interested in our project, we're thrilled to have you here.
 
-### Installation
+##Table of Contents
+- [Introduction](#Introduction)
+- [Features](#Features)
+- [Getting Started](#Getting-Started)
+    - [Prerequisites](Prerequisites)
+    - [Installation](#Installationn)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Community](#Community)
+- [License](#License)
 
-```
-$ yarn
-```
+#Introduction
+The Kathmandu University Open Source Project (KUOSC) website aims to provide an open and collaborative platform for showcasing the innovative projects, research, and contributions made by the Kathmandu University community. By developing a user-friendly and informative website, we strive to create a space where students, faculty, and alumni can share their work, collaborate on projects, and foster a culture of open-source collaboration.
 
-### Local Development
+#Features
+Project Showcase: Explore a diverse range of projects developed by the Kathmandu University community.
+Contributor Profiles: Learn about the individuals behind the projects and their contributions.
+Research Highlights: Discover groundbreaking research initiatives undertaken by the university's scholars.
+Event Announcements: Stay updated with upcoming seminars, workshops, and events organized by KUOSC.
+Easy Navigation: Intuitive user interface for seamless browsing and interaction.
+Open Source: The website itself is an open-source project, encouraging collaboration and improvements from the community.
 
-```
-$ yarn start
-```
+#Getting-Started
+#Prerequisites
+Before you proceed, ensure you have the following prerequisites:
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Web Browser: Latest version of Chrome, Firefox, Safari, or Edge.
+Text Editor: Any code editor of your choice for viewing/editing the source code.
+#Installation
+Clone the Repository:
 
-### Build
+bash
+Copy code
+git clone https://github.com/kuosc/website.git
+cd website
+Open the Project:
+Use your preferred text editor to open the project files.
 
-```
-$ yarn build
-```
+Congratulations! You've successfully set up the project locally.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+#Usage
+To view the KUOSC website locally, follow the installation steps above and then open the index.html file in your web browser.
 
-### Deployment
+Explore the project showcase, learn about contributors, and stay updated with the latest research and events. Feel free to navigate through the website's sections and provide feedback to help us improve.
 
-Using SSH:
+#Contributing
+We welcome contributions from the community to make the KUOSC website even better. To contribute:
 
-```
-$ USE_SSH=true yarn deploy
-```
+Fork the repository and create a new branch for your feature or bug fix.
+Make your changes and commit with descriptive messages.
+Push your branch to your forked repository.
+Submit a pull request to the main repository.
+Please follow our Contribution Guidelines for detailed instructions.
 
-Not using SSH:
+#Community
+Join our community to stay connected, ask questions, and share your thoughts:
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+Discord
+Twitter
+Mailing List
+We value your feedback and ideas to make this project thrive.
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+#License
+The KUOSC website is open-source and available under the MIT License. You're free to use, modify, and distribute the project's code following the terms of the license.
+
+Thank you for your interest in the Kathmandu University Open Source Project (KUOSC) website. We hope this README provides a clear understanding of our project's purpose, features, installation, and contribution guidelines. Feel free to explore the repository, share your feedback, and join our community to contribute to open source at Kathmandu University!
