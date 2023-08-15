@@ -1,17 +1,27 @@
+# Introduction
+
+Welcome to the Kathmandu University Open Source community knowledge base! Here, you'll find a comprehensive collection of essential documents, contributing guidelines, and project insights that illuminate the vibrant world of open-source collaboration within Kathmandu University.
+
+Our community thrives on the principles of knowledge sharing, innovation, and inclusivity, fostering an environment where students, developers, and enthusiasts converge to create impactful open-source projects. Whether you're a seasoned contributor or just taking your first steps into the world of open source, this knowledge base serves as your compass, guiding you through the intricacies of our community's projects, processes, and values.
+
+Dive into the resources available here to explore everything from detailed contributing guidelines that empower you to make meaningful contributions to our projects, to comprehensive overviews of the various initiatives undertaken by our community. Stay up-to-date with the latest updates, trends, and advancements within Kathmandu University's open-source ecosystem.
+
+As we collectively drive innovation and foster a culture of collaboration, this knowledge base stands as a testament to the dedication and passion that fuels our community. We invite you to explore, learn, and actively participate in shaping the future of open source at Kathmandu University. Your journey starts here!
+
 # Code Contribution Guidelines
 
-We would like to thank you for your interest in contributing. You can find below how you van get started with knowing and contributing to KUOSC projects. The first few steps are always crucial but signify how you wish to invovle with the community. 
+We would like to thank you for your interest in contributing. You can find below how you can get started with knowing and contributing to KUOSC projects. The first few steps are always crucial but signify how you wish to involve with the community. 
 
 # Get to know KUOSC 
  - Read the Contribution guidelines
  - Read the Code of Conduct.
- - Have a look at conducting coding contribution in Contributing Guidelines
- - Review the bug-list,open issues or Project Board(if you want to add a new feature).
- - Contact the Repository Maintainer by submitting issue with an @mention.
+ - Have a look at conducting coding contributions in Contributing Guidelines
+ - Review the bug list, open issues, or Project Board(if you want to add a new feature).
+ - Contact the Repository Maintainer by submitting an issue with an @mention.
  
 # Setting up the Development environment
 Setting up the development environment can vary according to the projects but there are common guidelines you can follow for open source contribution.
- 1. Choose a Project: Select an open source project you're interested in contributing to. Look for projects that align with your skills and interests.
+ 1. Choose a Project: Select an open-source project you're interested in contributing to. Look for projects that align with your skills and interests.
  2. Fork the Repository: On the project's GitHub page, click the "Fork" button. This creates a copy of the project's repository in your own GitHub account.
  3. Clone the Repository: In your local development environment, use the `git clone` command to create a local copy of your forked repository. Replace <username> with your GitHub username:
    - git clone https://github.com/<username>/project-name.git
@@ -19,17 +29,17 @@ Setting up the development environment can vary according to the projects but th
  5. Create a Branch: Before making changes, create a new branch in your local repository. This helps keep your changes isolated from the main codebase:
    - git checkout -b feature-name
 
-Following these basic steps will help you to set up your development environment for open source projects. 
+Following these basic steps will help you to set up your development environment for open-source projects. 
 
 # Make your contribution.
  - Make changes or addition to the code. 
- - Ensure that you code meets coding standards.
- - Performing relevant tests,which includes unit-testing or end-to-end testing as found fit for the repository that you will be submitting the pull-request for. 
+ - Ensure that your code meets coding standards.
+ - Performing relevant tests, which includes unit-testing or end-to-end testing as found fit for the repository that you will be submitting the pull request. 
  - Follow the documentation guidelines. 
 
 # Making your contribution ready for pull requests.
  1. Commit Your Changes: Stage and commit your changes:
-   - git add .
+   - git add.
    - git commit -m "Description of your changes"
  2. Push Changes to GitHub: Push your changes to your forked repository on GitHub:
    - git push origin branch-name
@@ -46,7 +56,7 @@ Following these basic steps will help you to set up your development environment
   
 
 # A note on coding standards 
-  Coding standards are a set of guidelines and best practices that are used to create consistent,high-quality code. Consider coding standards as rules,techniques, and best practices to develop cleaner,more readable, and more efficient code with minimal errors. It is wise to follow common coding standars which helps in:
+  Coding standards are a set of guidelines and best practices that are used to create consistent, high-quality code. Consider coding standards as rules, techniques, and best practices to develop cleaner, more readable, and more efficient code with minimal errors. It is wise to follow common coding standards which help in the:
   - Improve Code Quality 
   - Increase Efficiency 
   - Facilitate Collaboration.
