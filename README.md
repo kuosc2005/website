@@ -11,7 +11,6 @@ Welcome to the official repository of the Kathmandu University Open Source Proje
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Community](#community)
-- [License](#license)
 
 ## Introduction
 
