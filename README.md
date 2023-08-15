@@ -5,7 +5,7 @@ Welcome to the official repository of the Kathmandu University Open Source Proje
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-- [Getting Started](#getting-started)
+- [Before you build this site](#before-you-build-this-site)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
 - [Usage](#usage)
@@ -15,17 +15,16 @@ Welcome to the official repository of the Kathmandu University Open Source Proje
 
 ## Introduction
 
-The Kathmandu University Open Source Project (KUOSC) website aims to provide an open and collaborative platform for showcasing the innovative projects, research, and contributions made by the Kathmandu University community. By developing a user-friendly and informative website, we strive to create a space where students, faculty, and alumni can share their work, collaborate on projects, and foster a culture of open-source collaboration.
+The Kathmandu University Open Source Project (KUOSC) website aims to provide an open and collaborative platform for showcasing the innovative projects, research, and **contributions made by community members**. By developing a user-friendly and informative website, we strive to create a space where students, faculty, and alumni can share their work, collaborate on projects, and foster a culture of open-source collaboration.
 
 ## Features
-- Project Showcase: Explore a diverse range of projects developed by the Kathmandu University community.
-- Contributor Profiles: Learn about the individuals behind the projects and their contributions.
 - Research Highlights: Discover groundbreaking research initiatives undertaken by the university's scholars.
 - Event Announcements: Stay updated with upcoming seminars, workshops, and events organized by KUOSC.
 - Easy Navigation: Intuitive user interface for seamless browsing and interaction.
 - Open Source: The website itself is an open-source project, encouraging collaboration and improvements from the community.
+- Developed and Maintained by KUOSC
 
-## Getting-Started
+## before-you-build-this-site
 ### Prerequisites
 Before you proceed, ensure you have the following prerequisites:
 
@@ -75,8 +74,3 @@ Join our community to stay connected, ask questions, and share your thoughts:
 
 
 We value your feedback and ideas to make this project thrive.
-
-## License
-The KUOSC website is open-source and available under the MIT License. You're free to use, modify, and distribute the project's code following the terms of the license.
-
-Thank you for your interest in the Kathmandu University Open Source Project (KUOSC) website. We hope this README provides a clear understanding of our project's purpose, features, installation, and contribution guidelines. Feel free to explore the repository, share your feedback, and join our community to contribute to open source at Kathmandu University!
