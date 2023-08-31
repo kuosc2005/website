@@ -37,6 +37,41 @@
   font-weight: bold;
 }
 
+.sectionHeading {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 0.4fr auto;
+  place-items: center;
+  place-content: center;
+
+  @media (max-width: 768px) {
+  }
+}
+
+.banner p {
+  max-width: 70ch;
+  width: 50vw;
+}
+
+.banner img {
+  max-height: 300px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner {
+    grid-template-columns: auto;
+  }
+
+  .banner p {
+    width: unset;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 736px) {
   .pluginsHeader {
     padding-top: 30px;
