@@ -8,7 +8,7 @@ const KUCC = () => {
 			<div className={"container banner"}>
 				<img src={"/img/kucc-logo.png"} alt="KUCC" />
 				<p>
-					Kathmandu University Computer Club UCC is a non-profit, independent
+					Kathmandu University Computer Club KUCC is a non-profit, independent
 					club formed by students of the Department of Computer Science and
 					Engineering in the year 1997. Being registered as the first club of
 					Kathmandu University with the registration number 001/1997 in the
