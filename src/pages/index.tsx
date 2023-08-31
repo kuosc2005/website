@@ -8,6 +8,7 @@ import KUCC from '@site/src/components/KUCC';
 import styles from './index.module.css';
 import Sponsors from '../components/Sponsors';
 import HomepageFeatures from '../components/HomepageFeatures';
+import KUOSC from '../components/KUOSC';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -46,9 +47,11 @@ export default function Home(): JSX.Element {
       description="Welcome to the Kathmandu University Open Source Community (KUOSC), a thriving and historic community from Kathmandu University dedicated to promoting and embracing the spirit of Open Source.">
       <HomepageHeader />
       <main>
+        <h1 className={styles.sectionHeading}>About</h1>
+        <KUOSC/>
+        <KUCC/>
         <HomepageFeatures />
         <Sponsors/>
-        <KUCC/>
       </main>
     </Layout>
   );

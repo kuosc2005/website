@@ -4,7 +4,6 @@ import styles from "./styles.module.css";
 const KUCC = () => {
 	return (
 		<>
-			<h1 className={styles.sectionHeading}>About KUCC</h1>
 			<div className={"container banner"}>
 				<img src={"/img/kucc-logo.png"} alt="KUCC" />
 				<p>

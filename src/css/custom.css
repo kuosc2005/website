@@ -39,41 +39,49 @@
 
 .sectionHeading {
   text-align: center;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .banner {
-  display: grid;
-  grid-template-columns: 0.4fr auto;
-  place-items: center;
-  place-content: center;
-
-  @media (max-width: 768px) {
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .banner p {
-  max-width: 70ch;
-  width: 50vw;
+  max-width: 60vw;
+  margin: 0;
+  font-size: 1.1rem;
 }
 
 .banner img {
   max-height: 300px;
+  width: 300px;
 }
+
+.container {
+  margin: 0 auto;
+}
+
 
 @media only screen and (max-width: 1024px) {
   .banner {
-    grid-template-columns: auto;
+    flex-direction: column;
   }
-
-  .banner p {
-    width: unset;
-    text-align: center;
+  .banner p{
+    max-width: 90%;
   }
 }
 
 @media only screen and (max-width: 736px) {
   .pluginsHeader {
     padding-top: 30px;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner p{
+    width: 100%;
+    max-width: 100%;
   }
 }
