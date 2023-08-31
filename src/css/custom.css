@@ -47,11 +47,12 @@
   justify-content: space-around;
   align-items: center;
 }
-
-.banner p {
-  max-width: 60vw;
-  margin: 0;
-  font-size: 1.1rem;
+.banner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 60%;
 }
 
 .banner img {
@@ -68,7 +69,7 @@
   .banner {
     flex-direction: column;
   }
-  .banner p{
+  .banner .content {
     max-width: 90%;
   }
 }
