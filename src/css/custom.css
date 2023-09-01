@@ -88,4 +88,7 @@
     width: 100%;
     max-width: 100%;
   }
+  .kucc-banner {
+    flex-direction: column-reverse;
+  }
 }
