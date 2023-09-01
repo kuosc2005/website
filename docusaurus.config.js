@@ -94,6 +94,12 @@ const config = {
             position: 'left',
           },
           {
+            to: '/leaderboard/',
+            sidebarId: 'Leaderboard',
+            label: 'Leaderboard',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/kuosc2005/website',
             label: 'GitHub',
             position: 'right',
