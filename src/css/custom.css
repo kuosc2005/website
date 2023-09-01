@@ -72,6 +72,9 @@
   .banner .content {
     max-width: 90%;
   }
+  .kucc-banner {
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 736px) {

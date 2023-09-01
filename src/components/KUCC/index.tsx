@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 const KUCC = () => {
 	return (
 		<>
-			<div className={"container banner"}>
+			<div className={"container banner kucc-banner"}>
 
 				<div className={"content"}>
 					<h1>Kathmandu University Computer Club</h1>
