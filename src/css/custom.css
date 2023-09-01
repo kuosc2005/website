@@ -39,41 +39,56 @@
 
 .sectionHeading {
   text-align: center;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .banner {
-  display: grid;
-  grid-template-columns: 0.4fr auto;
-  place-items: center;
-  place-content: center;
-
-  @media (max-width: 768px) {
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.banner p {
-  max-width: 70ch;
-  width: 50vw;
+.banner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 60%;
 }
 
 .banner img {
   max-height: 300px;
+  width: 300px;
 }
+
+.container {
+  margin: 0 auto;
+}
+
 
 @media only screen and (max-width: 1024px) {
   .banner {
-    grid-template-columns: auto;
+    flex-direction: column;
   }
-
-  .banner p {
-    width: unset;
-    text-align: center;
+  .banner .content {
+    max-width: 90%;
+  }
+  .kucc-banner {
+    flex-direction: column-reverse;
   }
 }
 
 @media only screen and (max-width: 736px) {
   .pluginsHeader {
     padding-top: 30px;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner p{
+    width: 100%;
+    max-width: 100%;
+  }
+  .kucc-banner {
+    flex-direction: column-reverse;
   }
 }

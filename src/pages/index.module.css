@@ -10,6 +10,10 @@
   overflow: hidden;
 }
 
+.sectionHeading {
+  text-align: center;
+  padding-top: 1rem;
+}
 
 .buttons > a {
   margin: 5px;
