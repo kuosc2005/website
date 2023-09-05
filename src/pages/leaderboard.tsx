@@ -1,45 +1,24 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Layout from "@theme/Layout";
 import styles from "./leaderboard.module.css";
-import axios from "axios";
-import React, { useState, useEffect } from "react";
-const useDocusaurusContext =
-  require("@docusaurus/useDocusaurusContext").default;
-<script src="https://unpkg.com/@phosphor-icons/web"></script>;
 
 export default function Leaderboard() {
-  const { siteConfig } = useDocusaurusContext();
   const [contributors, setContributors] = useState([]);
   const [selectedContributor, setSelectedContributor] = useState(null);
-  const handleContributorSelect = (contributor) => {
-    setSelectedContributor(contributor);
-  };
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 8;
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(
-        "https://api.contributor.kuosc.org.np/api/v1/webhook"
-      );
-      console.log(response.data);
+      const response = await axios.get("http://localhost:3001/api/v1/webhook");
       if (response.data.success) {
         setContributors(response.data.data.docs);
       }
     } catch (err) {
-      console.log("Error");
-      console.log(err);
+      console.error("Error fetching data:", err);
     }
   };
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
-
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-
-  {
-    contributors.slice(startIndex, endIndex).map((contributor, index) => ({
-      ...contributor,
-      position: index + 1,
-    }));
-  }
 
   useEffect(() => {
     fetchData();
@@ -49,30 +28,55 @@ export default function Leaderboard() {
       setSelectedContributor(contributors[0]);
     }
   }, [contributors]);
+
+  const handleContributorSelect = (contributor) => {
+    setSelectedContributor(contributor);
+  };
+
+  const handlePreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const handleNextPage = () => {
+    const maxPage = Math.ceil(contributors.length / itemsPerPage);
+    if (currentPage < maxPage) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="Welcome to the Kathmandu University Open Source Community (KUOSC), a thriving and historic community from Kathmandu University dedicated to promoting and embracing the spirit of Open Source."
+      title="Contributors Leaderboard"
+      description="View the leaderboard of contributors."
     >
       <main>
         <div className={styles.container}>
           <div className={styles.board}>
             {selectedContributor && (
               <div className={styles.leftDetails}>
-                <h2>{selectedContributor.username}</h2>
+                <h2>{selectedContributor._id.username}</h2>
                 <div className={`${styles.avatar} avatar`}>
                   <img
-                    src={`https://avatars.githubusercontent.com/u/${selectedContributor.userId}?v=4`}
-                    alt={`${selectedContributor.username}'s Image`}
+                    src={`https://avatars.githubusercontent.com/u/${selectedContributor._id.userId}?v=4`}
+                    alt={`${selectedContributor._id.username}'s Image`}
                   />
                 </div>
+                <p>Number of Contributions: {selectedContributor.total}</p>
                 <p>
-                  Number of Contributions: {selectedContributor.contributions}
-                </p>
-                <p>
-                  Repository: {selectedContributor.repositoryName}
+                  Repository: {selectedContributor._id.username}
                   <br />
-                  Type: {selectedContributor.type}
+                  Type:{" "}
+                  {selectedContributor.types
+                    .map(
+                      (type) =>
+                        `${type.count} ${type.type}${type.count > 1 ? "s" : ""}`
+                    )
+                    .join(", ")}
                 </p>
               </div>
             )}
@@ -95,7 +99,7 @@ export default function Leaderboard() {
                     .slice(startIndex, endIndex)
                     .map((contributor, index) => (
                       <tr
-                        key={contributor._id}
+                        key={contributor._id.userId}
                         onClick={() => handleContributorSelect(contributor)}
                         className={
                           selectedContributor === contributor
@@ -103,31 +107,24 @@ export default function Leaderboard() {
                             : styles.notSelectedRow
                         }
                       >
-                        <td className={styles.number}>{index + 1}</td>
+                        <td className={styles.number}>
+                          {startIndex + index + 1}
+                        </td>
                         <td className={styles.name}>
-                          {contributor.username}
-                          <br />
-                          {contributor.repositoryName}
+                          {contributor._id.username}
                         </td>
-                        <td className={styles.points}>
-                          {contributor.type === "commit"
-                            ? contributor.type
-                            : contributor.type + "s"}
-                        </td>
+                        <td className={styles.points}>{contributor.total}</td>
                       </tr>
                     ))}
                 </tbody>
               </table>
             </div>
             <div className={styles.pagination}>
-              <button
-                onClick={() => setCurrentPage(currentPage - 1)}
-                disabled={currentPage === 1}
-              >
+              <button onClick={handlePreviousPage} disabled={currentPage === 1}>
                 Previous
               </button>
               <button
-                onClick={() => setCurrentPage(currentPage + 1)}
+                onClick={handleNextPage}
                 disabled={endIndex >= contributors.length}
               >
                 Next
