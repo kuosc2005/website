@@ -7,7 +7,7 @@ export default function Leaderboard() {
   const [contributors, setContributors] = useState([]);
   const [selectedContributor, setSelectedContributor] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
+  const itemsPerPage = 7;
 
   const fetchData = async () => {
     try {
@@ -57,27 +57,81 @@ export default function Leaderboard() {
       <main>
         <div className={styles.container}>
           <div className={styles.board}>
+            <div className={styles.leaderboardStairs}>
+              <h2>Contribution Leaders</h2>
+              {contributors.length > 0 && (
+                <div className={styles.leaderboardBar}>
+                  <div className={styles.leaderboardPosition}>
+                    <span>
+                      <img src="/img/medals/first.png" alt="" />
+                    </span>
+                  </div>
+                  <div className={styles.leaderboardName}>
+                    {contributors[0]._id.username}
+                  </div>
+                </div>
+              )}
+              {contributors.length > 1 && (
+                <div className={styles.leaderboardBar}>
+                  <div className={styles.leaderboardPosition}>
+                    <span>
+                      <img src="/img/medals/second.png" alt="" />
+                    </span>
+                  </div>
+                  <div className={styles.leaderboardName}>
+                    {contributors[1]._id.username}
+                  </div>
+                </div>
+              )}
+              {contributors.length > 2 && (
+                <div className={styles.leaderboardBar}>
+                  <div className={styles.leaderboardPosition}>
+                    <span>
+                      <img src="/img/medals/third.png" alt="" />
+                    </span>
+                  </div>
+                  <div className={styles.leaderboardName}>
+                    {contributors[2]._id.username}
+                  </div>
+                </div>
+              )}
+            </div>
+            <hr />
             {selectedContributor && (
               <div className={styles.leftDetails}>
-                <h2>{selectedContributor._id.username}</h2>
-                <div className={`${styles.avatar} avatar`}>
-                  <img
-                    src={`https://avatars.githubusercontent.com/u/${selectedContributor._id.userId}?v=4`}
-                    alt={`${selectedContributor._id.username}'s Image`}
-                  />
+                <div className={styles.avatarUsername}>
+                  <div className={`${styles.avatar} avatar`}>
+                    <img
+                      src={`https://avatars.githubusercontent.com/u/${selectedContributor._id.userId}?v=4`}
+                      alt={`${selectedContributor._id.username}'s Image`}
+                    />
+                  </div>
+                  &nbsp; &nbsp; &nbsp; &nbsp;
+                  <h3 className={styles.userName}>
+                    {selectedContributor._id.username}
+                  </h3>
                 </div>
-                <p>Number of Contributions: {selectedContributor.total}</p>
-                <p>
-                  Repository: {selectedContributor._id.username}
-                  <br />
-                  Type:{" "}
-                  {selectedContributor.types
-                    .map(
-                      (type) =>
-                        `${type.count} ${type.type}${type.count > 1 ? "s" : ""}`
-                    )
-                    .join(", ")}
-                </p>
+                <div className={styles.userInfo}>
+                  <p>
+                    <strong>Number of Contributions: </strong>
+                    {selectedContributor.total}
+                  </p>
+                  <p>
+                    <strong>Repository:</strong>{" "}
+                    {selectedContributor._id.username}
+                  </p>
+                  <p>
+                    <strong>Type:</strong>{" "}
+                    {selectedContributor.types
+                      .map(
+                        (type) =>
+                          `${type.count} ${type.type}${
+                            type.count > 1 ? "s" : ""
+                          }`
+                      )
+                      .join(", ")}
+                  </p>
+                </div>
               </div>
             )}
           </div>
@@ -85,6 +139,7 @@ export default function Leaderboard() {
             <div id="header">
               <h1>Contributions Leaderboard</h1>
             </div>
+            <br />
             <div id="leaderboard">
               <table>
                 <thead>
@@ -103,7 +158,7 @@ export default function Leaderboard() {
                         onClick={() => handleContributorSelect(contributor)}
                         className={
                           selectedContributor === contributor
-                            ? `${styles.selectedRow} ${styles.selected}` 
+                            ? `${styles.selectedRow} ${styles.selected}`
                             : styles.notSelectedRow
                         }
                       >
