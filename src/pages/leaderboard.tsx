@@ -83,7 +83,7 @@ export default function Leaderboard() {
           </div>
           <div className={styles.boardDetail}>
             <div id="header">
-              <h1>Leaderboard</h1>
+              <h1>Contributions Leaderboard</h1>
             </div>
             <div id="leaderboard">
               <table>
@@ -103,7 +103,7 @@ export default function Leaderboard() {
                         onClick={() => handleContributorSelect(contributor)}
                         className={
                           selectedContributor === contributor
-                            ? styles.selectedRow
+                            ? `${styles.selectedRow} ${styles.selected}` 
                             : styles.notSelectedRow
                         }
                       >
