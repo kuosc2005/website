@@ -11,7 +11,9 @@ export default function Leaderboard() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/api/v1/webhook");
+      const response = await axios.get(
+        "https://api.contributor.kuosc.org.np/api/v1/webhook"
+      );
       if (response.data.success) {
         setContributors(response.data.data.docs);
       }
