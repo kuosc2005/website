@@ -75,7 +75,7 @@ const config = {
 					alt: 'KUOSC Logo',
 					src: 'img/logo.svg',
 					srcDark: 'img/logo.svg',
-					href: 'https://kuosc.org.np/'
+					href: '/'
 				},
 				items: [
 					{
