@@ -1,8 +1,7 @@
 {
-    "label": "Website",
-    "position": 2,
-    "link": {
-      "type": "generated-index"
-    }
-  }
-  
+	"label": "Website",
+	"position": 2,
+	"link": {
+		"type": "generated-index"
+	}
+}

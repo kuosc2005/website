@@ -1,7 +1,7 @@
 ---
 slug: websitelaunch
 title: Launch of the KUOSC Website
-authors: [aadarshadhakalg,]
+authors: [aadarshadhakalg]
 tags: [kuosc, website, launch]
 ---
 
