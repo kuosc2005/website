@@ -6,22 +6,22 @@ import LazyLoad from 'react-lazyload';
 import SponsorAvatar from '../SponsorAvatar';
 
 const Sponsors = () => {
-  return (
-    <div className={styles.sponsors}>
-      <div className="pluginsHeader">Sponsors</div>
-      <div>
-        {sponsors.length > 0 && (
-          <LazyLoad height={200}>
-            <div className={styles.sponsor_content}>
-              {sponsors.map((data, i) => (
-                <SponsorAvatar key={i} {...data} />
-              ))}
-            </div>
-          </LazyLoad>
-        )}
-      </div>
-    </div>
-  );
+	return (
+		<div className={styles.sponsors}>
+			<div className="pluginsHeader">Sponsors</div>
+			<div>
+				{sponsors.length > 0 && (
+					<LazyLoad height={200}>
+						<div className={styles.sponsor_content}>
+							{sponsors.map((data, i) => (
+								<SponsorAvatar key={i} {...data} />
+							))}
+						</div>
+					</LazyLoad>
+				)}
+			</div>
+		</div>
+	);
 };
 
 export default Sponsors;
