@@ -18,15 +18,16 @@ E-Libraries have been established in various districts, including Surkhet, Salya
 
 ## Establishment of ELibrary
 
-The establishment of E-Libraries encompasses a comprehensive process that includes several key stages. 
+The establishment of E-Libraries encompasses a comprehensive process that includes several key stages.
 
-1. Feasibility analysis and site review following the receipt of proposals. 
+1. Feasibility analysis and site review following the receipt of proposals.
 2. The deployment phase encompasses both setup and training activities.
-    - A training program is conducted to equip teachers with the necessary skills, spanning from establishing LAN cable connections to troubleshooting on the Edubuntu platform.
+   - A training program is conducted to equip teachers with the necessary skills, spanning from establishing LAN cable connections to troubleshooting on the Edubuntu platform.
 3. Continuous monitoring is an integral part of the process, carried out two times annually over a span of 2 years to ensure sustained effectiveness.
 4. LTSP Trainings, where KUOSC volunteers receive specialized training in the Linux Terminal Server Project (LTSP), enhancing their ability to effectively contribute to the project's success.
 
 ## Impact and Achievements
+
 The impact of the HeNN E-Library Project has been profound:
 
 - E-Libraries established in 35 districts
