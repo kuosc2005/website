@@ -1,28 +1,63 @@
 .container {
-  padding: 2rem 2rem;
-  width: 100%;
-  height: 100%;
+  padding: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
 
-.board {
-  padding: 2rem 2rem;
-  margin-right: 1rem;
+.board,
+.boardDetail {
   flex: 1;
   height: 50rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-box-shadow: 0px 5px 15px 8px #e4e7fb;
-  box-shadow: 0px 5px 15px 8px #e4e7fb;
-  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px 8px #e4e7fb;
+}
+
+.board {
+  margin-right: 1rem;
+  background-color: #ffffff;
+}
+
+.boardDetail {
+  margin-left: 1rem;
+  background-color: #ffffff;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9;
+}
+
+.loading img {
+  width: 150px;
+  height: 150px;
+}
+
+.loading p {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
 }
 
 .leaderboardStairs {
-  padding: 2rem 2rem;
+  width: 100%;
+  height: 50%;
+  padding: 2rem;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -32,32 +67,28 @@
   align-items: flex-start;
 }
 
-.leaderboardStairs h3 {
-  font-size: 18px;
-  color: #333;
-}
 .leaderboardBar {
   display: flex;
   align-items: center;
   margin: 0.5rem 0;
   padding: 0.5rem;
 }
-.leaderboardPosition {
-  flex: 1;
-  text-align: right;
-  display: flex;
-  padding-right: 1rem;
+
+.leaderboardPosition,
+.leaderboardName {
+  flex: 2;
   font-weight: bold;
 }
 
 .leaderboardName {
-  flex: 3;
   height: 2rem;
   display: flex;
   align-items: center;
-  padding-left: 1rem;
-  font-weight: bold;
-  font-size: 1.18rem;
+}
+
+.leaderboardPosition img {
+  /* width: 82px; */
+  height: 50px;
 }
 
 hr {
@@ -76,17 +107,19 @@ hr {
 }
 
 .leftDetails {
-  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 4rem;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 1rem 4rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   flex-direction: column;
   align-items: left;
 }
+
 .userInfo {
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: left;
 }
 
@@ -97,22 +130,7 @@ hr {
 
 .avatar img {
   border-radius: 50%;
-  width: 100px;
   height: 100px;
-}
-
-.boardDetail {
-  padding: 2rem 2rem;
-  margin-left: 1rem;
-  flex: 1.5;
-  height: 50rem;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 15px 8px #e4e7fb;
-  box-shadow: 0px 5px 15px 8px #e4e7fb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 0.5rem;
 }
 
 #header {
@@ -147,10 +165,7 @@ tbody tr {
   transition: background-color 0.3s;
 }
 
-.selectedRow {
-  background-color: #f0f0f0;
-}
-
+.selectedRow,
 tbody tr:hover {
   background-color: #f0f0f0;
 }
@@ -174,7 +189,17 @@ tbody tr:hover {
   background-color: #ddd;
   cursor: not-allowed;
 }
+table {
+  width: 100%;
+  overflow-x: auto;
+}
 
+th,
+td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -182,20 +207,86 @@ tbody tr:hover {
     padding: 1rem;
   }
 
-  .board {
-    margin-right: 0;
+  .board,
+  .boardDetail {
+    margin: 0;
     margin-bottom: 1rem;
     height: auto;
   }
 
+  .avatar img {
+    border-radius: 50%;
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .board,
   .boardDetail {
-    margin-left: 0;
-    margin-top: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  .avatarUsername {
+    flex-direction: column;
+  }
+  .avatar img {
+    border-radius: 50%;
+    height: 50px;
+  }
+  table {
+    font-size: 14px;
+  }
+  .number,
+  .name,
+  .points {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .board,
+  .boardDetail {
+    margin: 0;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  table {
+    font-size: 14px;
+  }
+  .avatarUsername {
+    flex-direction: column;
+  }
+  .avatar img {
+    border-radius: 50%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 280px) {
+  .container {
+    padding: 1rem;
+  }
+  table {
+    font-size: 14px;
+  }
+  .board,
+  .boardDetail {
+    margin: 0;
+    margin-bottom: 1rem;
     height: auto;
   }
 
   .avatar img {
-    width: 100px;
-    height: 100px;
+    border-radius: 50%;
+    height: 50px;
   }
 }
