@@ -14,11 +14,11 @@ export default function Leaderboard() {
 		try {
 			const response = await axios.get('https://api.contributor.kuosc.org.np/api/v1/webhook');
 			if (response.data.success) {
-        console.log(response.data.data.docs);
+				console.log(response.data.data.docs);
 				setContributors(response.data.data.docs);
 			}
 		} catch (err) {
-			console.error('Error fetching data:', err);
+			console.error('Error fetching data: sopm,ethjoimng', err);
 		} finally {
 			setLoading(false);
 		}
@@ -30,7 +30,7 @@ export default function Leaderboard() {
 
 	useEffect(() => {
 		if (contributors.length > 0) {
-      console.log(contributors[0]);
+			console.log(contributors[0]);
 			setSelectedContributor(contributors[0]);
 		}
 	}, [contributors]);
