@@ -19,37 +19,33 @@ The Kathmandu University Open Source Project (KUOSC) website aims to provide an 
 ## Features
 - Research Highlights: Discover groundbreaking research initiatives undertaken by the university's scholars.
 - Event Announcements: Stay updated with upcoming seminars, workshops, and events organized by KUOSC.
-- Easy Navigation: Intuitive user interface for seamless browsing and interaction.
 - Open Source: The website itself is an open-source project, encouraging collaboration and improvements from the community.
 - Developed and Maintained by KUOSC
 
 ## before-you-build-this-site
+
 ### Prerequisites
 Before you proceed, ensure you have the following prerequisites:
 
-Web Browser: Latest version of Chrome, Firefox, Safari, or Edge.
-Text Editor: Any code editor of your choice for viewing/editing the source code.
+This website is built using [Docusaurus](https://docusaurus.io/docs) a free documentation website generator developed and maintained by Meta Open Source. 
+Follow the Docusaurus official documentation to setup the development environment to run this project.
+**Docusaurus Documentation**: https://docusaurus.io/docs
+
 ### Installation
 1. **Clone the Repository:**
-
+```
 git clone https://github.com/kuosc/website.git
-
-
 cd website
+```
+2. **Install required packages:**
+```
+npm install --legacy-peer-deps
+```
 
-2. **Open the Project:**
-
-
-Use your preferred text editor to open the project files.
-
-
-
-Congratulations! You've successfully set up the project locally.
-
-## Usage
-To view the KUOSC website locally, follow the installation steps above and then open the index.html file in your web browser.
-
-Explore the project showcase, learn about contributors, and stay updated with the latest research and events. Feel free to navigate through the website's sections and provide feedback to help us improve.
+3. **Run the project:**
+```
+npm start
+```
 
 ## Contributing
 We welcome contributions from the community to make the KUOSC website even better. To contribute:
@@ -62,14 +58,7 @@ We welcome contributions from the community to make the KUOSC website even bette
 
 ## Community
 Join our community to stay connected, ask questions, and share your thoughts:
-
 [Discord](https://discord.gg/3tudZbMadu)
-
-
 [Twitter](https://twitter.com/kucc1997)
-
-
 [Website](https://www.kuosc.org.np/)
-
-
-We value your feedback and ideas to make this project thrive.
+[Matrix](https://matrix.to/#/#kuosc:matrix.org)

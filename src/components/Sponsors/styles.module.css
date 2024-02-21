@@ -1,0 +1,12 @@
+.sponsors {
+	text-align: center;
+	padding: 3rem 1rem;
+}
+
+.sponsor_content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}

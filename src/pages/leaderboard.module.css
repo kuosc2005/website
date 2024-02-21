@@ -1,0 +1,292 @@
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.board,
+.boardDetail {
+  flex: 1;
+  height: 50rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 15px 8px #e4e7fb;
+}
+
+.board {
+  margin-right: 1rem;
+  background-color: #ffffff;
+}
+
+.boardDetail {
+  margin-left: 1rem;
+  background-color: #ffffff;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9;
+}
+
+.loading img {
+  width: 150px;
+  height: 150px;
+}
+
+.loading p {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.leaderboardStairs {
+  width: 100%;
+  height: 50%;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.leaderboardBar {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.leaderboardPosition,
+.leaderboardName {
+  flex: 2;
+  font-weight: bold;
+}
+
+.leaderboardName {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.leaderboardPosition img {
+  /* width: 82px; */
+  height: 50px;
+}
+
+hr {
+  width: 100%;
+  margin: 2.8rem 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.avatarUsername {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.leftDetails {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 4rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: left;
+}
+
+.userInfo {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.userInfo p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.avatar img {
+  border-radius: 50%;
+  height: 100px;
+}
+
+#header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.header-row {
+  background-color: #333;
+  color: #fff;
+}
+
+.number,
+.name,
+.points {
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.selectedRow,
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 28px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+th,
+td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .board,
+  .boardDetail {
+    margin: 0;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+
+  .avatar img {
+    border-radius: 50%;
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .board,
+  .boardDetail {
+    margin: 0;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  .avatarUsername {
+    flex-direction: column;
+  }
+  .avatar img {
+    border-radius: 50%;
+    height: 50px;
+  }
+  table {
+    font-size: 14px;
+  }
+  .number,
+  .name,
+  .points {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .board,
+  .boardDetail {
+    margin: 0;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  table {
+    font-size: 14px;
+  }
+  .avatarUsername {
+    flex-direction: column;
+  }
+  .avatar img {
+    border-radius: 50%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 280px) {
+  .container {
+    padding: 1rem;
+  }
+  table {
+    font-size: 14px;
+  }
+  .board,
+  .boardDetail {
+    margin: 0;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+
+  .avatar img {
+    border-radius: 50%;
+    height: 50px;
+  }
+}
