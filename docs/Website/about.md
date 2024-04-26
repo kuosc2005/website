@@ -56,7 +56,7 @@ Contributing to this project is easy, and we welcome contributions from everyone
 - **Test your changes**: Make sure your changes work as expected and do not introduce any regressions.
 - **Commit your changes**: Commit your changes with clear and descriptive commit messages.
 - **Push your changes**: Push your changes to your forked repository.
-- **Submit a pull request**: Submit a pull request [here](https://github.com/kucc1997/kucc-website/pulls) with your changes, clearly describing what you have done.
+- **Submit a pull request**: Submit a pull request [here](https://github.com/kuosc2005/website/pulls) with your changes, clearly describing what you have done.
  
 ### Writing Commit Messages
 
