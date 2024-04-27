@@ -5,7 +5,7 @@ sidebar_position: 0
 # About
 ## KUOSC Website
 
-This site is live at [https://kuosc.org.np](https://kuosc.org.np) and is built   using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.  
+This site is live at [https://kuosc.org.np](https://kuosc.org.np) and is built using react and powered by [Docusaurus 2](https://docusaurus.io/) for static site generation from MDX files.
 You can view the source code at [github](https://github.com/kuosc2005/website).
 
 ### Installation
