@@ -8,7 +8,8 @@ sidebar_position: 4
 ## Open Source Contribution Swags:
 
 This document outlines the Kathmandu University Open Source Club's (KUOSC) policy and workings regarding the distribution of special swag to contributors. The policy covers two categories of swag distribution and emphasizes that contributions to both KUOSC and the Kathmandu University Computer Club (KUCC) are valued and encouraged.
-Software Freedom Day Swag
+
+## Software Freedom Day Swag
 
 KUOSC recognizes the importance of Software Freedom Day, a global celebration of the open-source movement. To mark this occasion, KUOSC will distribute special edition swag to contributors who actively participate in club activities and projects leading up to Software Freedom Day.
 
