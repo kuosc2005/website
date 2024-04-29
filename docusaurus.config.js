@@ -131,7 +131,7 @@ const config = {
 						items: [
 							{
 								label: 'Open School',
-								to: '/knowledgebase/category/open-school'
+								to: 'https://www.youtube.com/@kuosc'
 							},
 							{
 								label: 'Linux Talk',
