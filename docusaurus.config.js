@@ -61,6 +61,12 @@ const config = {
 				routeBasePath: 'knowledgebase',
 				sidebarPath: require.resolve('./sidebarsKnowledgebase.js')
 			}
+		],
+		[
+			'docusaurus2-dotenv',
+			{
+				systemvars: true
+			}
 		]
 	],
 
@@ -95,8 +101,8 @@ const config = {
 						to: '/leaderboard/',
 						sidebarId: 'Leaderboard',
 						label: 'Leaderboard',
-						position: 'left',
-					  },
+						position: 'left'
+					},
 					{
 						href: 'https://github.com/kuosc2005/website',
 						label: 'GitHub',
