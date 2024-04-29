@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://kuosc.org.np/blog</id>
+    <title>Kathmandu University Open Source Community Blog</title>
+    <updated>2024-02-21T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://kuosc.org.np/blog"/>
+    <subtitle>Kathmandu University Open Source Community Blog</subtitle>
+    <icon>https://kuosc.org.np/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Training at Dhulikhel Children's Home]]></title>
+        <id>https://kuosc.org.np/blog/2024-02-21-training-at-dhulikhel-childrens-home</id>
+        <link href="https://kuosc.org.np/blog/2024-02-21-training-at-dhulikhel-childrens-home"/>
+        <updated>2024-02-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Training]]></summary>
+        <content type="html"><![CDATA[<p><img loading="lazy" alt="Training" src="/assets/images/training-77c70afdbfe9804633b7f37f3160581f.jpg" width="4096" height="3072" class="img_ev3q"></p><p>Volunteers from Kathmandu University Open Source Community (KUOSC) in collaboration with Help Nepal Network Nepal (HeNN) conducted a training session for children at Dhulikhel Children's Home. The session focused on equipping the children with essential computer skills and fostering responsible internet usage.</p><p>The training aimed to familiarize the children with their newly upgraded computer lab. Volunteers guided them on navigating educational websites like E-Paathsala, E-paath, Maths and Science Quiz, and Hamro Ramailo Kathaharu offered by OLE Nepal. These platforms provide access to a wealth of learning materials, enhancing the children's educational opportunities.</p><p>Furthermore, the volunteers emphasized internet safety, educating the children on responsible online behavior and navigating the digital world with caution.</p><p><strong>Volunteers:</strong></p><ul><li>Aadarsha Dhakal</li><li>Ayush Paudel</li><li>Jamyang Gelek Gurung</li></ul><p><strong>From HeNN Nepal:</strong></p><ul><li>Merisha Kafle</li><li>Anil Kumar Shrestha</li></ul><p>This collaborative effort empowers the children at Dhulikhel Children's Home with valuable technological skills and fosters responsible digital citizenship, paving the way for a brighter future.</p>]]></content>
+        <author>
+            <name>Aadarsha Dhakal</name>
+            <uri>https://github.com/aadarshadhakalg</uri>
+        </author>
+        <category label="kuosc" term="kuosc"/>
+        <category label="HeNN" term="HeNN"/>
+        <category label="LTSP" term="LTSP"/>
+        <category label="Training" term="Training"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Launch of the KUOSC Website]]></title>
+        <id>https://kuosc.org.np/blog/websitelaunch</id>
+        <link href="https://kuosc.org.np/blog/websitelaunch"/>
+        <updated>2023-08-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[KUOSC Banner]]></summary>
+        <content type="html"><![CDATA[<p><img loading="lazy" alt="KUOSC Banner" src="/assets/images/kuosc-plain-banner-2979e4e8f34ab7cd201a70c1fdd6b64b.jpeg" width="1640" height="856" class="img_ev3q"></p><p>Introducing the New KUOSC Website: Unveiling a Hub of Open Source Activities!</p><p>The Kathmandu University Open Source Community (KUOSC) proudly presents its brand-new website! Loaded with features and insights, this platform is set to become the go-to destination for all things related to open source.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-inside">What's Inside:<a href="#whats-inside" class="hash-link" aria-label="Direct link to What's Inside:" title="Direct link to What's Inside:">​</a></h2><p><strong>Project Showcase:</strong> Dive into the world of open source of KUOSC through detailed project descriptions.Our projects are here to inspire and engage.</p><p><strong>Contributors Leaderboard:</strong> Recognizing the dedicated individuals behind our success. The leaderboard highlights top contributors and their valuable contributions.</p><p><strong>Knowledge Base:</strong> Whether you're a beginner or a seasoned pro, our knowledge base has something for you. Find tutorials, guides, and resources to enhance your skills.</p><p><strong>Stay Updated:</strong> Keep track of all KUOSC activities and updates in one place. From events to announcements, you'll never miss a beat.</p><p>Join us on this exciting journey towards open source innovation. Explore the new KUOSC website today and unlock a world of collaboration and learning. Check it out now at website link!</p><p>Stay tuned for a remarkable open source experience brought to you by KUOSC!</p>]]></content>
+        <author>
+            <name>Aadarsha Dhakal</name>
+            <uri>https://github.com/aadarshadhakalg</uri>
+        </author>
+        <category label="kuosc" term="kuosc"/>
+        <category label="website" term="website"/>
+        <category label="launch" term="launch"/>
+    </entry>
+</feed>

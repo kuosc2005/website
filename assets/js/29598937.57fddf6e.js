@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8796],{1780:e=>{e.exports=JSON.parse('{"title":"Website","slug":"/category/website","permalink":"/docs/category/website","navigation":{"previous":{"title":"Setup and Build Guide","permalink":"/docs/NepLib Linux/setup-and-build-guide"},"next":{"title":"About","permalink":"/docs/Website/about"}}}')}}]);
