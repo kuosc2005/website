@@ -12,9 +12,9 @@ export default function Leaderboard() {
 
 	const fetchData = async () => {
 		try {
-			const response = await axios.get('https://api.contributor.kuosc.org.np/api/v1/webhook');
+			const response = await axios.get(process.env.CONTRIBUTION_API_BASE_URL + 'api/v1/webhook');
 			if (response.data.success) {
-        console.log(response.data.data.docs);
+				console.log(response.data.data.docs);
 				setContributors(response.data.data.docs);
 			}
 		} catch (err) {
@@ -30,7 +30,7 @@ export default function Leaderboard() {
 
 	useEffect(() => {
 		if (contributors.length > 0) {
-      console.log(contributors[0]);
+			console.log(contributors[0]);
 			setSelectedContributor(contributors[0]);
 		}
 	}, [contributors]);
