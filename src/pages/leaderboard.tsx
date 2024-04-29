@@ -130,7 +130,7 @@ export default function Leaderboard() {
 								</div>
 							</div>
 
-							<div className={styles.boardDetail}>
+							<div className={styles.board}>
 								<div id="header">
 									<h1>Contributions Leaderboard</h1>
 								</div>
