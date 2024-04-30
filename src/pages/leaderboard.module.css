@@ -6,8 +6,7 @@
   justify-content: space-around;
 }
 
-.board,
-.boardDetail {
+html[data-theme='light'] .board{
   flex: 1;
   height: 50rem;
   padding: 2rem;
@@ -18,14 +17,25 @@
   box-shadow: 0 5px 15px 8px #e4e7fb;
 }
 
+html[data-theme='dark'] .board {
+  flex: 1;
+  height: 50rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 18px rgba(95, 201, 135, 0.55);  
+}
+
 .board {
   margin-right: 1rem;
-  background-color: #ffffff;
+  background-color: var(--ifm-background-color);
 }
 
 .boardDetail {
   margin-left: 1rem;
-  background-color: #ffffff;
+  background-color: var(--ifm-background-color);
 }
 
 .loading {
@@ -58,7 +68,7 @@
   width: 100%;
   height: 50%;
   padding: 2rem;
-  background-color: #f5f5f5;
+  background-color: var(--ifm-overlay-color);
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -95,7 +105,7 @@ hr {
   width: 100%;
   margin: 2.8rem 0;
   border: 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--ifm-hover-overlay);
 }
 
 .avatarUsername {
@@ -110,7 +120,7 @@ hr {
   width: 100%;
   height: 100%;
   padding: 1rem 4rem;
-  background-color: #f5f5f5;
+  background-color: var(--ifm-overlay-color);
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -167,7 +177,7 @@ tbody tr {
 
 .selectedRow,
 tbody tr:hover {
-  background-color: #f0f0f0;
+  background-color: var(--ifm-hover-overlay);
 }
 
 .pagination {
@@ -180,15 +190,17 @@ tbody tr:hover {
   margin: 0 5px;
   border: none;
   border-radius: 4px;
-  color: #000000;
+  /* background-color: var(--ifm-button-color); */
+  /* color: var(--ifm-button-color); */
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .pagination button:disabled {
-  background-color: #ddd;
+  /* background-color: var(--ifm-button-color); */
   cursor: not-allowed;
 }
+
 table {
   width: 100%;
   overflow-x: auto;
@@ -200,6 +212,7 @@ td {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -231,16 +244,20 @@ td {
     margin-bottom: 1rem;
     height: auto;
   }
+
   .avatarUsername {
     flex-direction: column;
   }
+
   .avatar img {
     border-radius: 50%;
     height: 50px;
   }
+
   table {
     font-size: 14px;
   }
+
   .number,
   .name,
   .points {
@@ -259,12 +276,15 @@ td {
     margin-bottom: 1rem;
     height: auto;
   }
+
   table {
     font-size: 14px;
   }
+
   .avatarUsername {
     flex-direction: column;
   }
+
   .avatar img {
     border-radius: 50%;
     height: 50px;
@@ -275,9 +295,11 @@ td {
   .container {
     padding: 1rem;
   }
+
   table {
     font-size: 14px;
   }
+
   .board,
   .boardDetail {
     margin: 0;
