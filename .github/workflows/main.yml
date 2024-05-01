@@ -1,6 +1,6 @@
 name: Build & deploy in VPS
 
-on: 
+on:
   push:
     branches:
       - main
@@ -8,28 +8,22 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  
-  steps:
-    - name: Checkout 
-      uses: actions/checkout@v2
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: 20
-
-    - name: Install yarn
-      run: npm install -g npm@latest
-
-    - name: Install required dependencies
-      run: yarn install
-
-    - name: Build
-      run: yarn build
-
-    -name: Verify Build
-      run: |
-        if [ $? -ne 0 ]; then
-          echo "Build failed"
-          exit 1
-        fi
+    steps:
+      - name: Deploy using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd ~/website
+            git pull origin main
+            yarn install
+            yarn build
+            if [ $? -ne 0 ]; then
+              echo "Build failed"
+              exit 1
+            fi
+            pm2 restart .
