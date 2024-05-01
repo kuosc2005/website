@@ -1,5 +1,5 @@
 ---
-knowledgebaseSidebar_position: 1
+sidebar_positon: 0
 ---
 
 # About
