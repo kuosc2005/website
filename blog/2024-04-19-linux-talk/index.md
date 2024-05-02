@@ -2,7 +2,7 @@
 slug: Linux Talk
 title: Linux Talk
 authors: [irhs0]
-tags: [kuosc, event, linux]
+tags: [open-source,kuosc, event, linux]
 ---
 
 
@@ -15,15 +15,15 @@ alt="penguin_holding_linux_talk"
 height="50%" 
 width="100%"
 />
-
 <hr/>
 
-On April 19th,Linux talk a yearly event hosted by KUCC and KUOSC was held that offered a comprehensive exploration of open-source software and its underlying principles. The session delved into the collaborative nature of open-source development, where source code is freely available for inspection, modification, and contribution. This transparency fosters a unique environment that prioritizes innovation and community-driven problem-solving.Not only that but Linux talk but it also marked the inauguration of GNOME Nepal, a chapter dedicated to the popular open-source desktop environment.
+On April 19th,Linux talk a yearly event hosted by KUCC and KUOSC was held that offered an exploration of open-source softwares.The session went into the discussion of collaborative nature of open-source development,where source code is freely available for contribution.Not only that but Linux talk but it also marked the inauguration of **GNOME Nepal**, a chapter dedicated to the popular open-source desktop environment.
 
-The Linux talk itself delved into the collaborative nature of open-source development, where source code is freely available for inspection, modification, and contribution. This transparency fosters a unique environment that prioritizes innovation and community-driven problem-solving. The session explored the advantages of open-source software in detail, highlighting its potential for rapid advancement and user empowerment through accessible source code.
+Following the Linux talk, the official inauguration of GNOME Nepal was conducted. 
+This ceremony promises to be a valuable resource for enthusiasts of the GNOME desktop environment, providing a platform for collaboration, learning, and promoting the adoption of open-source software in Nepal.
 
-A particularly engaging element of the event was a Kahoot session. This interactive quiz, employing a gamified approach, served as a fun and effective way to reinforce the key concepts presented during the talk. The competitive spirit fostered a sense of camaradarie amongst the attendees, further strengthening the connections made throughout the evening.
+With that,the representative of GNOME Nepal,Aditya Singh shared his experience working with GNOME and his contributions to the GNOME Project and how we could also help and interact with the community.
+A particularly engaging element of the event was a Kahoot session. 
+It enthrilled the participants and brought a spirit of competition within the peers. 
 
-Following the Linux talk, the stage was set for a special announcement – the official inauguration of GNOME Nepal. This new chapter promises to be a valuable resource for enthusiasts of the GNOME desktop environment, providing a platform for collaboration, learning, and promoting the adoption of open-source software in Nepal.
-
-The combined event proved to be a rewarding experience. It not only offered a comprehensive understanding of open-source software and the benefits of the GNOME desktop environment but also fostered a sense of connection within the vibrant open-source community. The event's combination of informative content, interactive elements, and opportunities for networking solidified the value proposition of open-source software and its potential to drive innovation and collaboration in Nepal.
+After the Kahoot session, there was an interactive session with community members and heads of communities within KUOSC, which was beneficial for new members of the club and community.
