@@ -10,7 +10,7 @@ tags: [open-source,kuosc, event, linux]
 
 <hr/>
 <img
-src={require('./img/linux_talk_01.jpg').default}
+src={require('./img/linux_talk_01.webp').default}
 alt="penguin_holding_linux_talk"
 height="50%" 
 width="100%"

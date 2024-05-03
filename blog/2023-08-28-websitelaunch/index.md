@@ -5,7 +5,7 @@ authors: [aadarshadhakalg]
 tags: [kuosc, website, launch]
 ---
 
-![KUOSC Banner](./kuosc-plain-banner.jpeg)
+![KUOSC Banner](./kuosc-plain-banner.jpeg.webp)
 
 Introducing the New KUOSC Website: Unveiling a Hub of Open Source Activities!
 
