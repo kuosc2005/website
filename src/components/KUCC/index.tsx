@@ -16,7 +16,7 @@ const KUCC = () => {
 						(KUCC), KUOSC radiates the same spirit of technological excellence and collaboration.
 					</p>
 				</div>
-				<img src={'/img/kucc-logo.png'} alt="KUCC" />
+				<img src={'/img/kucc-logo.webp'} alt="KUCC" />
 			</div>
 		</>
 	);

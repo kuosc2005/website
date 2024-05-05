@@ -5,7 +5,7 @@ const KUOSC = () => {
 	return (
 		<>
 			<div className={'container banner'}>
-				<img src={'/img/kuosc.png'} alt="KUOSC" />
+				<img src={'/img/kuosc.webp'} alt="KUOSC" />
 				<div className={'content'}>
 					<h1>Kathmandu University Open Source Community</h1>
 					<p>

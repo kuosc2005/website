@@ -102,7 +102,7 @@ export default function Leaderboard() {
 									{contributors.length > 0 && (
 										<div className={styles.leaderboardBar}>
 											<div className={styles.leaderboardPosition}>
-												<img src="/img/medals/first.png" alt="" />
+												<img src="/img/medals/first.webp" alt="" />
 											</div>
 											<div className={styles.leaderboardName}>{contributors[0]._id.username}</div>
 										</div>
@@ -111,7 +111,7 @@ export default function Leaderboard() {
 										<div className={styles.leaderboardBar}>
 											<div className={styles.leaderboardPosition}>
 												<>
-													<img src="/img/medals/second.png" alt="" />
+													<img src="/img/medals/second.webp" alt="" />
 												</>
 											</div>
 											<div className={styles.leaderboardName}>{contributors[1]._id.username}</div>
@@ -121,7 +121,7 @@ export default function Leaderboard() {
 										<div className={styles.leaderboardBar}>
 											<div className={styles.leaderboardPosition}>
 												<span>
-													<img src="/img/medals/third.png" alt="" />
+													<img src="/img/medals/third.webp" alt="" />
 												</span>
 											</div>
 											<div className={styles.leaderboardName}>{contributors[2]._id.username}</div>

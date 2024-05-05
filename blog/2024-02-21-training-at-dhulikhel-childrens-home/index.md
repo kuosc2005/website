@@ -5,7 +5,7 @@ authors: [aadarshadhakalg]
 tags: [kuosc, HeNN, LTSP, Training]
 ---
 
-![Training](./training.jpg)
+![Training](./training.webp)
 
 Volunteers from Kathmandu University Open Source Community (KUOSC) in collaboration with Help Nepal Network Nepal (HeNN) conducted a training session for children at Dhulikhel Children's Home. The session focused on equipping the children with essential computer skills and fostering responsible internet usage.
 
