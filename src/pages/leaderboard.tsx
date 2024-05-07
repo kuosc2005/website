@@ -77,7 +77,7 @@ export default function Leaderboard() {
 												/>
 											</div>
 											&nbsp; &nbsp; &nbsp; &nbsp;
-											<a target="_blank" href={`https://github.com/${selectedContributor._id.username}`} className={styles.userName}>{selectedContributor._id.username}</a>
+											<h2><a target="_blank" href={`https://github.com/${selectedContributor._id.username}`} className={styles.userName}>{selectedContributor._id.username}</a></h2>
 										</div>
 										<div className={styles.userInfo}>
 											<p>
