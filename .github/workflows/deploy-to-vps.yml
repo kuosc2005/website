@@ -1,0 +1,29 @@
+name: Build & deploy in VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd ~/website
+            git pull origin main
+            yarn install
+            yarn build
+            if [ $? -ne 0 ]; then
+              echo "Build failed"
+              exit 1
+            fi
+            pm2 restart .

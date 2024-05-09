@@ -1,5 +1,6 @@
 ---
-knowledgebaseSidebar_position: 1
+displayed_sidebar: knowledgebase
+sidebar_position: 0
 ---
 
 # Introduction
