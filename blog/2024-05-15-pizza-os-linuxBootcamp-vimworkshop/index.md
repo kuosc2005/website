@@ -27,6 +27,7 @@ The talk's main objective was to distribute the ideas that we had among the peop
 <hr/>
 
 ## Linux Bootcamp
+[resources](https://github.com/S-Sigdel/linux-bootcamp)
 A three day session which initiated hands-on experience on Linux, and Vim.
 ### Day 1: Linux Introduction and Installations
 May-13-2024
