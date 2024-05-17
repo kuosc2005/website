@@ -83,6 +83,6 @@ The end of the workshop was done by commencing a Kahoot session, where questions
 <hr/>
 
 ## Acknowledgement
-I would like to express my deepest gratitude to Aadarsha Dhakal, Nirjal Bhurten, and Sugat Sujakhu for providing this wonderful opportunity to orgnize and tutor Linux Bootcamp. Moreover, I would like to thank my friends: Shriharsh Acharya, and Rajat Dahal on collaborating to create this project a massive success.
+I would like to express my deepest gratitude to Abhiyan Dhakal, Nirjal Bhurten, and Sugat Sujakhu for providing this wonderful opportunity to orgnize and tutor Linux Bootcamp. Moreover, I would like to thank my friends: Shriharsh Acharya, and Rajat Dahal on collaborating to create this project a massive success.
 
 <hr/>
