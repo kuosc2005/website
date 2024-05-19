@@ -8,13 +8,14 @@ tags: [open-source, kuosc, Vim, OS, Linux, KUCC]
 
 # 3 days Linux Bootcamp with Vim Workshop
 ## Linux Bootcamp
-[resources](https://github.com/S-Sigdel/linux-bootcamp)
-A three day session which initiated hands-on experience on Linux, and Vim.
-### Day 1: Linux Introduction and Installations
-May-13-2024
+
 <a href="https://github.com/s-siggdel/linux-bootcamp">
 resources
 </a>
+<br/>
+A three day session which initiated hands-on experience on Linux, and Vim.
+### Day 1: Linux Introduction and Installations
+May-13-2024
 <br/>
 <img
 src={require('./src/img/linux_bootcamp.jpg').default}
