@@ -14,21 +14,25 @@ resources
 </a>
 <br/>
 A three day session which initiated hands-on experience on Linux, and Vim.
-### Day 1: Linux Introduction and Installations
+
+## Day 1: Linux Introduction and Installations
+
 May-13-2024
+
 <br/>
 <img
 src={require('./src/img/linux_bootcamp.jpg').default}
 alt="I, presenting about the linux-filsystem"
-height="50%" 
+height="50%"
 width="100%"
 />
 <br/>
 <br/>
-This was the first day of the Linux Bootcamp, the number of participants were enough to fill all the benches in the classroom. The program began by simply stating about the outline of the bootcamp, and what to expect (slides can be found on the link below the heading of Linux Bootcamp). Mr Sugat Sujakhu and I presented about the linux ecosystem and the Linux file-system hierarchy. After the presentation ended, we started to install Linux on the participants computer under their consent. The installations were a bit of a hiccupss on some computer due to Windows Bitlocker Encryption, but after a while every computer were running linux (some did dual boot, while some chad people performed linux installation as their one and only operating system). Post installation, a few basic linux commands were taught. The day was success, with a few installations happening in the College's library by my and my friends.  
+This was the first day of the Linux Bootcamp, the number of participants were enough to fill all the benches in the classroom. The program began by simply stating about the outline of the bootcamp, and what to expect (slides can be found on the link below the heading of Linux Bootcamp). Mr Sugat Sujakhu and I presented about the linux ecosystem and the Linux file-system hierarchy. After the presentation ended, we started to install Linux on the participants computer under their consent. The installations were a bit of a hiccupss on some computer due to Windows Bitlocker Encryption, but after a while every computer were running linux (some did dual boot, while some chad people performed linux installation as their one and only operating system). Post installation, a few basic linux commands were taught. The day was success, with a few installations happening in the College's library by my and my friends.
+
 <hr/>
 
-### Day 2: Essential Commands, Installing Applications, Learning About Processes
+## Day 2: Essential Commands, Installing Applications, Learning About Processes
 
 May-14-2024
 <img
@@ -43,7 +47,7 @@ Well then came the second day. We had expected a drop in members given the compl
 
 <hr/>
 
-### Day 3: The final showdown: VIM
+## Day 3: The final showdown: VIM
 
 May-15-2024
 <img
