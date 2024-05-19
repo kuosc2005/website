@@ -27,7 +27,7 @@ The talk's main objective was to distribute the ideas that we had among the peop
 
 ### Neplib Linux
 
-This is an Operating System project that KUOSC has been working on to provide to the schools of rural areas, where there hardly is infrastructure of internet. This system bundled content from Help Nepal Network for providing materials to primary and seconday level students. In addition this operating system also provides a telementry side for monitoring the computer systems deployed and maintaining them. The main objective of this project was to provide a user-friendly interfacd, specifically designed for beginners who may not have used a computer before. The operating system project intends to updte and upgrade the previously built software, bringing a fresh content to E-library deployed in remote Nepali regions. 
+This is an Operating System project that KUOSC has been working on to provide to the schools of rural areas, where there hardly is infrastructure of internet. This system bundled content from Help Nepal Network for providing materials to primary and seconday level students. In addition this operating system also provides a telementry side for monitoring the computer systems deployed and maintaining them. The main objective of this project was to provide a user-friendly interfacd, specifically designed for beginners who may not have used a computer before. The operating system project intends to update and upgrade the previously built software, bringing a fresh content to E-library deployed in remote Nepali regions. 
 
 ### OS for Lab
 
