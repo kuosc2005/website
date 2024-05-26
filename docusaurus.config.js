@@ -139,10 +139,6 @@ const config = {
 						title: 'Knowledgebase',
 						items: [
 							{
-								label: 'Open School',
-								to: 'https://www.youtube.com/@kuosc'
-							},
-							{
 								label: 'Linux Talk',
 								to: '/knowledgebase/category/linux-talk'
 							},
