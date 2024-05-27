@@ -1,6 +1,6 @@
 ---
 title: Writing a Program
-sidebar_position: 0
+sidebar_position: 3
 ---
 
 # Writing a Program

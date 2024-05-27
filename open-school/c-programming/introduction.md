@@ -1,6 +1,6 @@
 ---
 title: Introduction to C
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # Introduction to C
