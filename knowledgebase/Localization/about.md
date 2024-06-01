@@ -36,7 +36,7 @@ We have contributed on localization of softwares like:
 
 - Firefox Web Browser
 
-- Bahmini Educational Software
+- Bahmini
 
 ## Resources:
 
