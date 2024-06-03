@@ -63,6 +63,15 @@ const config = {
 			}
 		],
 		[
+			'@docusaurus/plugin-content-docs',
+			{
+				id: 'open-school',
+				path: 'open-school',
+				routeBasePath: 'open-school',
+				sidebarPath: require.resolve('./sidebarsOpenSchool.js')
+			}
+		],
+		[
 			'docusaurus2-dotenv',
 			{
 				systemvars: true
@@ -129,10 +138,6 @@ const config = {
 					{
 						title: 'Knowledgebase',
 						items: [
-							{
-								label: 'Open School',
-								to: 'https://www.youtube.com/@kuosc'
-							},
 							{
 								label: 'Linux Talk',
 								to: '/knowledgebase/category/linux-talk'
