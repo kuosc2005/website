@@ -16,6 +16,6 @@ The Kathmandu University Computer Club (KUCC) website serves as the main platfor
 
 - Showcase current student projects through a semester project listing.
 
-## **Tech Stack:**
+## Tech Stack
 
 The website is built using Next.js, TypeScript, and TailwindCSS.
