@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7347],{5906:e=>{e.exports=JSON.parse('{"label":"HeNN","permalink":"/blog/tags/he-nn","allTagsPath":"/blog/tags","count":1}')}}]);
