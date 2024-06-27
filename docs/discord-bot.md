@@ -3,7 +3,7 @@
 
 ## About this Project
 
-This Discord bot project aims to create a well-organized and efficient server for various communities. The project is currently in the planning phase.
+This Discord bot project aims to create a well-organized and efficient server for various communities. 
 
 ## Structure of the Server
 
