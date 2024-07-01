@@ -6,16 +6,18 @@ The Kathmandu University Computer Club (KUCC) website serves as the main platfor
 
 ## Plans and Features
 
-- Integrate the website with the study and resource section of cscedrive (https://cscedrive.chandanmahato.com.np/). This will improve accessibility to study materials and resources.
+- **Integrate with csedrive:** Integrate the website with the study and resource section of cscedrive (https://cscedrive.chandanmahato.com.np/). This will improve accessibility to study materials and resources.
 
-- Foster relationships and recognition among KUCC members and alumni, enhancing a sense of community and collaboration.
+- **Community Engagement:** Foster relationships and recognition among KUCC members and alumni, enhancing a sense of community and collaboration.
 
-- Establish a platform where members can log in using their student accounts and manage their profiles. This includes their bios, tech stack, semester projects, and interests.
+- **Member Profiles:** Establish a platform where members can log in using their student accounts and manage their profiles. This includes their bios, tech stack, semester projects, and interests.
 
-- Ensure everyone is informed about the ongoing research and various labs in the Department of Computer Science and Engineering.
+- **Research and Labs Information:** Ensure everyone is informed about the ongoing research and various labs in the Department of Computer Science and Engineering.
 
-- Showcase current student projects through a semester project listing.
+- **Project Showcase:** Showcase current student projects through a semester project listing.
 
 ## Tech Stack
 
-The website is built using Next.js, TypeScript, and TailwindCSS.
+Next.js, TypeScript, and TailwindCSS.
+
+## Maintainer
