@@ -1,5 +1,5 @@
 ---
-slug: Linux Talk
+slug: 2024-04-19-linux-talk
 title: Linux Talk
 authors: [irhs0]
 tags: [open-source,kuosc, event, linux]
