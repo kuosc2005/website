@@ -140,7 +140,7 @@ const config = {
 						items: [
 							{
 								label: 'Linux Talk',
-								to: '/knowledgebase/category/linux-talk'
+								to: '/blog/2024-04-19-linux-talk'
 							},
 							{
 								label: 'HeNN Elibrary Deployment',
