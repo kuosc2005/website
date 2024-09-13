@@ -36,7 +36,7 @@ KUOSC has made significant contributions to the localization efforts of various 
 KUOSC took the initiative to organize and lead the Bahmni localization sprint independently. Bahmni, an open-source healthcare platform, received dedicated contribution from KUOSC, resulting in comprehensive localization efforts tailored to the specific needs of healthcare professionals and patients in rural Nepali community.
 
 - **LibreOffice**: 
-KUOSC played a pivotal role in the LibreOffice localization sprint, which was initiated by The Document Foundation (TDF). Collaborating with TDF, BOSC, NOSK, and KUOSC, the sprint aimed to enhance the accessibility of LibreOffice across different linguistic communities. As one of the organizers, Kuosc facilitated the coordination of efforts and ensured effective communication among contributors. This initiative led to the expansion of LibreOffice's language support and improved user experience for non-English-speaking users worldwide.
+KUOSC played a pivotal role in the LibreOffice localization sprint, which was initiated by The Document Foundation (TDF). Collaborating with TDF, BOSC(Birendra Open Source Community), NOSK(Nepal Open Source Klub), and KUOSC, the sprint aimed to enhance the accessibility of LibreOffice across different linguistic communities. As one of the organizers, KUOSC facilitated the coordination of efforts and ensured effective communication among contributors. This initiative led to the expansion of LibreOffice's language support and improved user experience for non-English-speaking users worldwide.
 
 - **VLC Media Player**:
 KUOSC has contributed to the localization of VLC Media Player, a versatile and widely used multimedia player.
@@ -56,9 +56,11 @@ These are some of the resources to help you get started on localization projects
   translating.
 
 - [Style Guides](https://docs.google.com/document/d/1O_IffGR99cRx2WZ3RyYY82ggwCUet_WZdfX3VXngSBE):
-  A style guide prepared to maintain coherence among contributions.
+  A style guide prepared to maintain coherence among contributions. By [Mr. Saroj Dhakal](https://www.linkedin.com/in/sarojdhakal/)
 
 - [Transliteration](https://github.com/sapradhan/ne-rom-translit) on GNU/Linux:
   For setting up transliteration.
+ 
+- [Glossary](https://docs.google.com/spreadsheets/d/1XAbU6Z7ogmKIe99mtYxxvWaiiH2gd727x_oK1fCNxm8/edit?usp=sharing) for Bahmni by Mr. Saroj Dhakal
 
 Join the KUCC [discord](https://discord.gg/M8U94sCf4K) server for more help.
