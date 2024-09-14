@@ -25,7 +25,7 @@ function HomepageHeader() {
 						Open School
 					</Link>
 					<Link className="button button--secondary button--lg" to="https://sfd.kuosc.org.np/">
-						SFD 2023
+						SFD 2024
 					</Link>
 				</div>
 			</div>
