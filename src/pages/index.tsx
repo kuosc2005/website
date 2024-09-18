@@ -21,11 +21,11 @@ function HomepageHeader() {
 					<Link className="button button--secondary button--lg" to="/docs/intro">
 						Know Our Projects
 					</Link>
-					<Link className="button button--secondary button--lg" to="https://www.youtube.com/@kuosc">
+					<Link className="button button--secondary button--lg" to="/open-school/intro">
 						Open School
 					</Link>
 					<Link className="button button--secondary button--lg" to="https://sfd.kuosc.org.np/">
-						SFD 2023
+						SFD 2024
 					</Link>
 				</div>
 			</div>
