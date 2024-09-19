@@ -5,7 +5,6 @@ authors: [razzat008]
 tags: [open-source,kuosc,osm]
 ---
 
-<hr/>
 <img
 src={require('./src/img/osm-day.webp').default}
 alt="cute_president"
@@ -27,26 +26,27 @@ Which makes it a goto choice for developers interested in customizable mapping s
 
 ## Why was OSM founded?
 
-Like many other open-source projects, OSM was founded as a response to lack of liberty.  
+Like many other open-source projects, the OSM was founded in response to the lack of liberty.  
 The project was largely motivated by the restrictive policies of national mapping agencies like the Ordnance Survey,
-which did not widely release their data for public use. 
+which did not release their data for public use. 
 
 Peeking into its history, after the project started in 2004, the OpenStreetMap Foundation was established in 2006 to support the project's
 growth and manage its operations.  
 This nonprofit organization promotes the distribution and development of free geospatial data.
 
-Likewise, in 2007, OSM hosted its first annual conference, "State of the Map," in Manchester, which further solidified its community and outreach efforts.
+Likewise, in 2007, OSM hosted its first annual conference, "State of the Map," in Manchester, further strengthened its community and outreach efforts.
 By this time, OSM had grown to over 9,000 registered users.  
-Fast forward to today, OSM now has millions of users around the world.
+To date, OSM has millions of users around the world.
 
 ## The event 
 
-Moving towards the event, the speaker for the day was [Mr.Suraj Thapa](https://github.com/suthamakes).  
-He shared his previous experiences, along with his idelogies towards the OSM project. In addition to that,
+Moving toward the event, the speaker for the day was [Mr.Suraj Thapa](https://github.com/suthamakes).  
+He shared his previous experiences and his ideologies toward the OSM project. In addition,
 he also shared problems that could be solved using OSM, he gave examples of: 
-Disaster and Climate Resilience, Humanitarian Mapping etc.
+Disaster and Climate Resilience, Humanitarian Mapping, etc.  
+We learned about the impact of the OSM community.
 
-We progressed towards the end of the event by sharing our experiences with OSM or open-source in general, and 
+We progressed toward the end of the event by sharing our experiences with OSM or open-source in general, and 
 ended the event by cutting the cake brought especially for this day.
 
 <img
@@ -56,6 +56,7 @@ height="50%"
 width="50%"
 />
 <hr/>
+
 
 ### Resoucres:
 - Slides presented on the event [here](https://docs.google.com/presentation/d/1LZEnJRs0vgzQEc_4UH6Vk5xNdngqtQsenXcKMNZtwaY).
