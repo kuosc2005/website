@@ -1,0 +1,31 @@
+name: Feature Request
+description: File a feature request.
+labels: ["enhancement"]
+title: "[Enhancement]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this form!
+        Please make sure this won't a duplicate.
+  - type: checkboxes
+    attributes:
+      label: Type
+      description: | 
+        Please specify the nature of feature you're requesting.
+        If not sure, check 'others'.
+      options:
+        - label: Documentation
+          required: false
+        - label: Codebase
+        - label: UI/UX
+        - label: Others
+  - type: textarea
+    attributes:
+      label: Feature(s).
+      description: Mention what you'd like to see.
+      placeholder: Add a section for blogs.
+  - type: textarea
+    attributes:
+      label: Additional context.
+      description: Anything you'd like to add that'll help us?
