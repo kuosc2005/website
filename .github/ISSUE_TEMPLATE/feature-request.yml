@@ -23,8 +23,8 @@ body:
   - type: textarea
     attributes:
       label: Feature(s).
-      description: Mention what you'd like to see.
-      placeholder: Add a section for blogs.
+      description: Mention what you'd like to suggest.
+      placeholder: For eg:Add a section for blogs.
   - type: textarea
     attributes:
       label: Additional context.
