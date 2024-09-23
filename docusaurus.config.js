@@ -166,6 +166,10 @@ const config = {
 							{
 								label: 'Facebook',
 								href: 'https://www.facebook.com/groups/kuosc'
+							},
+							{
+								label: 'Discord',
+								href: 'https://discord.gg/UG6VYVxNV2'
 							}
 						]
 					},
