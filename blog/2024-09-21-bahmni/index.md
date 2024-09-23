@@ -11,6 +11,8 @@ To address this issue, the **Kathmandu University Open Source Community (KUOSC)*
 
 ### **Day 1: Introduction to Software Localization**
 
+![Training](./day1.webp)
+
 The Kathmandu University Open Source Community, together with the KUCC Health Informatics community, kicked off the localization sprint on **May 16th, 2024**, with an event titled **"Introduction to Software Localization."** This session was attended by approximately **50 participants**, and it underscored the significance of software localization in improving healthcare access.
 
 The event began with an introduction by **Ashwini Subedi**, the event lead. This was followed by insightful talks from **Dr. Bal Krishna Bal**, an expert in Natural Language Processing (NLP), and **Mr. Saroj Dhakal**, a seasoned localization professional. The speakers highlighted the best practices in localization, the role of machine translation, and the impact of localization on language preservation. Mr. Dhakal then conducted a **hands-on session** that provided practical training on localizing Bahmni.
