@@ -40,7 +40,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: 22
           script: |
-            cd ~/website
+            cd ~/kuosc-website
             git pull origin main || { echo "Failed to pull latest changes from Git repository"; exit 1; }
             yarn install || { echo "Failed to install dependencies"; exit 1; }
             yarn run build || { echo "Build failed"; exit 1; }
