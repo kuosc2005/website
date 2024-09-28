@@ -1,7 +1,5 @@
 name: Build & deploy in VPS
 
-name: test build
-
 on:
   push:
     branches:
