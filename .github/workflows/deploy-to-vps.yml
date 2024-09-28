@@ -1,5 +1,7 @@
 name: Build & deploy in VPS
 
+name: test build
+
 on:
   push:
     branches:
@@ -10,7 +12,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy using ssh
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn run build
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy using SSH
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -19,12 +43,7 @@ jobs:
           port: 22
           script: |
             cd ~/website
-            git pull origin main
-            yarn install
-            yarn build
-            if [ $? -ne 0 ]; then
-              echo "Build failed"
-              exit 1
-            fi
-            pm2 restart .
-2 changes: 1 addition & 1 deletion
+            git pull origin main || { echo "Failed to pull latest changes from Git repository"; exit 1; }
+            yarn install || { echo "Failed to install dependencies"; exit 1; }
+            yarn run build || { echo "Build failed"; exit 1; }
+            pm2 restart kuosc || { echo "Failed to restart PM2"; exit 1; }
