@@ -91,7 +91,7 @@
 		flex-direction: column-reverse;
 	}
 }
-
-img{
+ 
+.avatar-img{
   max-width:none;
 }
