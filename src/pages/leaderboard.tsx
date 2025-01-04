@@ -73,7 +73,8 @@ export default function Leaderboard() {
 											<div className={`${styles.avatar} avatar`}>
 												<img
 													src={`https://avatars.githubusercontent.com/u/${selectedContributor._id.userId}?v=4`}
-													alt={`${selectedContributor._id.username}'s Image`}
+													alt={`${selectedContributor._id.username}'s Image` }
+                          className="avatar-img"
 												/>
 											</div>
 											&nbsp; &nbsp; &nbsp; &nbsp;
