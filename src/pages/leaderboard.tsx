@@ -3,180 +3,139 @@ import axios from 'axios';
 import Layout from '@theme/Layout';
 import styles from './leaderboard.module.css';
 
+
 export default function Leaderboard() {
-	const [contributors, setContributors] = useState([]);
-	const [selectedContributor, setSelectedContributor] = useState(null);
-	const [currentPage, setCurrentPage] = useState(1);
-	const [loading, setLoading] = useState(true);
-	const itemsPerPage = 7;
+  const [contributors, setContributors] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 3;
 
-	const fetchData = async () => {
-		try {
-			const response = await axios.get(process.env.CONTRIBUTION_API_BASE_URL + 'api/v1/webhook');
-			if (response.data.success) {
-				console.log(response.data.data.docs);
-				setContributors(response.data.data.docs);
-			}
-		} catch (err) {
-			console.error('Error fetching data:', err);
-		} finally {
-			setLoading(false);
-		}
-	};
+  const owner = "kuosc2005";
+  const repo = "website";
 
-	useEffect(() => {
-		fetchData();
-	}, []);
+  const fetchContributors = async () => {
+    try {
+      const response = await axios.get(`https://api.github.com/repos/${owner}/${repo}/contributors`);
+      setContributors(response.data);
+    } catch (err) {
+      console.error('Error fetching contributors:', err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-	useEffect(() => {
-		if (contributors.length > 0) {
-			console.log(contributors[0]);
-			setSelectedContributor(contributors[0]);
-		}
-	}, [contributors]);
+  useEffect(() => {
+    fetchContributors();
+  }, []);
 
-	const handleContributorSelect = (contributor) => {
-		setSelectedContributor(contributor);
-	};
+  const startIndex = (page - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentContributors = contributors.slice(startIndex, endIndex); // Get current page contributors
 
+  // Handle next page click
+  const handleNextPage = () => {
+    if (endIndex < contributors.length) {
+      setPage(page + 1); 
+    }
+  };
+
+    // Handle previous page click
 	const handlePreviousPage = () => {
-		if (currentPage > 1) {
-			setCurrentPage(currentPage - 1);
+		if (startIndex > 0) {
+		  setPage(page - 1); 
 		}
-	};
+	  };
 
-	const handleNextPage = () => {
-		const maxPage = Math.ceil(contributors.length / itemsPerPage);
-		if (currentPage < maxPage) {
-			setCurrentPage(currentPage + 1);
-		}
-	};
+	const topThreeContributors = contributors.slice(0, 3);
 
-	const startIndex = (currentPage - 1) * itemsPerPage;
-	const endIndex = startIndex + itemsPerPage;
-
-	return (
-		<Layout title="Contributors Leaderboard" description="View the leaderboard of contributors.">
-			<main>
-				<div className={styles.container}>
-					{loading ? (
-						<div className={styles.loading}>
-							<img src="/img/loading.gif" alt="Loading..." />
-							<p>Loading...</p>
-						</div>
-					) : (
-						<>
-							<div className={styles.board}>
-								{selectedContributor && (
-									<div className={styles.leftDetails}>
-										<div className={styles.avatarUsername}>
-											<div className={`${styles.avatar} avatar`}>
-												<img
-													src={`https://avatars.githubusercontent.com/u/${selectedContributor._id.userId}?v=4`}
-													alt={`${selectedContributor._id.username}'s Image` }
-                          className="avatar-img"
-												/>
-											</div>
-											&nbsp; &nbsp; &nbsp; &nbsp;
-											<h2><a target="_blank" href={`https://github.com/${selectedContributor._id.username}`} className={styles.userName}>{selectedContributor._id.username}</a></h2>
-										</div>
-										<div className={styles.userInfo}>
-											<p>
-												<strong>Number of Contributions: </strong>
-												{selectedContributor.total}
-											</p>
-											<p>
-												<strong>Repository:</strong> {selectedContributor._id.username}
-											</p>
-											<p>
-												<strong>Type:</strong>{' '}
-												{selectedContributor.types
-													.map((type) => `${type.count} ${type.type}${type.count > 1 ? 's' : ''}`)
-													.join(', ')}
-											</p>
-										</div>
-									</div>
-								)}
-								<hr />
-								<div className={styles.leaderboardStairs}>
-									<h2>Contribution Leaders</h2>
-									{contributors.length > 0 && (
-										<div className={styles.leaderboardBar}>
-											<div className={styles.leaderboardPosition}>
-												<img src="/img/medals/first.webp" alt="" />
-											</div>
-											<div className={styles.leaderboardName}>{contributors[0]._id.username}</div>
-										</div>
-									)}
-									{contributors.length > 1 && (
-										<div className={styles.leaderboardBar}>
-											<div className={styles.leaderboardPosition}>
-												<>
-													<img src="/img/medals/second.webp" alt="" />
-												</>
-											</div>
-											<div className={styles.leaderboardName}>{contributors[1]._id.username}</div>
-										</div>
-									)}
-									{contributors.length > 2 && (
-										<div className={styles.leaderboardBar}>
-											<div className={styles.leaderboardPosition}>
-												<span>
-													<img src="/img/medals/third.webp" alt="" />
-												</span>
-											</div>
-											<div className={styles.leaderboardName}>{contributors[2]._id.username}</div>
-										</div>
-									)}
-								</div>
-							</div>
-
-							<div className={styles.board}>
-								<div id="header">
-									<h1>Contributions Leaderboard</h1>
-								</div>
-								<br />
-								<div id="leaderboard">
-									<table>
-										<thead>
-											<tr className={styles['header-row']}>
-												<th className={styles.number}>Position</th>
-												<th className={styles.name}>Name</th>
-												<th className={styles.points}>Contributions</th>
-											</tr>
-										</thead>
-										<tbody>
-											{contributors.slice(startIndex, endIndex).map((contributor, index) => (
-												<tr
-													key={contributor._id.userId}
-													onClick={() => handleContributorSelect(contributor)}
-													className={
-														selectedContributor === contributor
-															? `${styles.selectedRow} ${styles.selected}`
-															: styles.notSelectedRow
-													}
-												>
-													<td className={styles.number}>{startIndex + index + 1}</td>
-													<td className={styles.name}>{contributor._id.username}</td>
-													<td className={styles.points}>{contributor.total}</td>
-												</tr>
-											))}
-										</tbody>
-									</table>
-								</div>
-								<div className={styles.pagination}>
-									<button onClick={handlePreviousPage} disabled={currentPage === 1}>
-										Previous
-									</button>
-									<button onClick={handleNextPage} disabled={endIndex >= contributors.length}>
-										Next
-									</button>
-								</div>
-							</div>
-						</>
-					)}
+  return (
+<Layout title="Contributors Leaderboard" description="View the leaderboard of contributors.">
+      <main>
+        <div className={styles.container}>
+          {loading ? (
+            <div className={styles.loading}>
+              <img src="/img/loading.gif" alt="Loading..." />
+              <p>Loading...</p>
+            </div>
+          ) : (
+            <>
+			<div className={styles.parentbox}>
+			<div className={styles.title}><h1>Contributors</h1></div>
+			<div className={styles.title}><p>The lovely people who have worked on this website!</p>
+			<br></br>
 				</div>
-			</main>
-		</Layout>
-	);
+              <div className={styles.flexRow}>
+                <div className={styles.leftBox}>
+                  <h2>Spotlight!</h2>
+				  <h3>Top three contributors</h3>
+                  <div className={styles.topThreeLeft}>
+                    {topThreeContributors.map((contributor) => (
+                      <a
+                        key={contributor.id}
+                        href={contributor.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.contributorCard}
+                      >
+                        <img
+                          src={contributor.avatar_url}
+                          alt={`${contributor.login}'s Avatar`}
+                          className={styles.avatar}
+                        />
+                        <h3 className={styles.username}>{contributor.login}</h3>
+                        <p> {contributor.contributions} contributions</p>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
+                <div className={styles.rightBox}>
+                  <h2>Leaderboard</h2>
+                  <div className={styles.rightColumn}>
+                    {currentContributors.map((contributor) => (
+                      <a
+                        key={contributor.id}
+                        href={contributor.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.contributorCard}
+                      >
+                        <img
+                          src={contributor.avatar_url}
+                          alt={`${contributor.login}'s Avatar`}
+                          className={styles.avatar}
+                        />
+                        <h3 className={styles.username}>{contributor.login}</h3>
+                        <p> {contributor.contributions} contributions</p>
+                      </a>
+                    ))}
+
+                    <div className={styles.paginationButtons}>
+                      <button
+                        className={styles.prevPageButton}
+                        onClick={handlePreviousPage}
+                        disabled={startIndex === 0} // Disable if it's the first page
+                      >
+                        Previous
+                      </button>
+                      <button
+                        className={styles.nextPageButton}
+                        onClick={handleNextPage}
+                        disabled={endIndex >= contributors.length} // Disable if it's the last page
+                      >
+                        Next
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  </div>
+            </>
+          )}
+		  </div>
+	
+      </main>
+    </Layout>
+  );
 }
+
