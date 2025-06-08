@@ -86,7 +86,7 @@ body {
   box-shadow: var(--box-shadow); 
   height: 180px; 
   box-sizing: border-box; 
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .contributorCard:hover {
@@ -169,3 +169,23 @@ body {
   width: 80%;
   background-color: var(--background-color);
 } 
+
+@media (max-width: 768px) {
+  .flexRow {
+    flex-direction: column;
+  }
+
+  .leftBox,
+  .rightBox {
+    width: 100%;
+  }
+
+  .topThreeLeft .topThreeRow {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .paginationButtons {
+    justify-content: center;
+  }
+}
