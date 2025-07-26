@@ -3,15 +3,5 @@
 		"name": "Tech Himalaya",
 		"url": "https://techhimalaya.com",
 		"logo": "/img/sponsors/techhimalaya.webp"
-	},
-	{
-		"name": "Mudita Store",
-		"url": "https://mudita.com.np/",
-		"logo": "/img/sponsors/mudita.svg"
-	},
-	{
-		"name": "Vercel (Infrastructure)",
-		"url": "https://vercel.com/",
-		"logo": "/img/sponsors/powered-by-vercel.svg"
-	}
+	}	
 ]
